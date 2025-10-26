@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { BsFillGridFill } from "react-icons/bs";
 import SIH_Winner from "../assets/gallery/SIH_Winner.jpg";
 import Activity_26_Aug_1 from "../assets/gallery/Activity-26-Aug_1.jpg";
-import Activity_15_Sept_2 from "../assets/gallery/Activity-15-sept_2.jpg";
+import Activity_15_Sept_2 from "../assets/gallery/Activity-15-Sept_2.jpg";
 
 function Gallery() {
     return (
