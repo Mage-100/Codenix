@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router';
+import "lenis/dist/lenis.css";
 import './index.css'
 import App from './App.jsx'
 import Page404 from './components/Page404.jsx';

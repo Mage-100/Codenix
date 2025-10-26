@@ -4,6 +4,15 @@ import {motion} from "motion/react";
 function Hero() {
     return (
         <div className="text-white p-4 grow flex flex-col justify-center relative">
+            <motion.div className="absolute top-[50%] left-[50%] translate-[-50%]
+             w-120 aspect-square
+            bg-gray-50
+            bg-linear-to-tr
+            from-red-500
+            to-gray-50
+        opacity-2
+             -rotate-45 
+              "></motion.div>
             <div className="backdrop absolute top-[50%] left-[50%] translate-[-50%] ">
                 <NumberGrid />
             </div>
@@ -25,6 +34,10 @@ function Hero() {
                     GCU's Official Coding Club
                 </h2>
             </div>
+        <div className="absolute bottom-4 right-4">
+        <span className="text-sm font-light mr-2 block">powered by</span>
+        <span className="text-lg xl:text-2xl font-medium">Girijananda Chowdhury University</span>
+        </div>
         </div>
     );
 }

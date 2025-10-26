@@ -5,19 +5,37 @@ div.hero-div {
     --height: var(--pad-y) * 6;
 }
 
-div.hero-div div.cool_backdrop_background {
+div.cool_backdrop_background {
+    --pad-x: 0.9;
+    --pad-y: 1.5;
+    --width: 18;
+    --height: var(--pad-y) * 6;
+    --size: 8px;
     clip-path: polygon(
-        0% calc(var(--pad-y) * 1%),
-        calc(var(--pad-x) * 1%) 0%,
-        calc((var(--width)) * 1%) 0%,
-        calc((100 - var(--pad-x)) * 1%) 0%,
-        100% calc(var(--pad-y) * 1%),
-        100% calc((100 - var(--pad-y)) * 1%),
-        calc((100 - var(--pad-x)) * 1%) 100%,
-        calc(var(--pad-x) * 1%) 100%,
-        0% calc((100 - var(--pad-y)) * 1%)
+        0% var(--size),
+        var(--size) 0%,
+        calc(100% - var(--size)) 0%,
+        100% var(--size),
+        100% calc(100% - var(--size)),
+        calc(100% - var(--size)) 100%,
+        var(--size) 100%,
+        0% calc(100% - var(--size))
     );
 }
+
+/*
+clip-path: polygon(
+    0% calc(var(--pad-y) * 1%),
+    calc(var(--pad-x) * 1%) 0%,
+    calc((var(--width)) * 1%) 0%,
+    calc((100 - var(--pad-x)) * 1%) 0%,
+    100% calc(var(--pad-y) * 1%),
+    100% calc((100 - var(--pad-y)) * 1%),
+    calc((100 - var(--pad-x)) * 1%) 100%,
+    calc(var(--pad-x) * 1%) 100%,
+    0% calc((100 - var(--pad-y)) * 1%)
+);
+  */
 
 div.hero-div div.drop_2 {
     clip-path: polygon(
