@@ -59,3 +59,31 @@ div.hero-div div.drop_3 {
         0% calc((var(--height) - 0.8) * 1%)
     );
 }
+
+@reference "tailwindcss";
+
+table {
+    @apply border border-solid border-neutral-600;
+}
+
+table caption {
+    @apply border-r border-l border-t border-solid border-neutral-600;
+    @apply py-2;
+    @apply rounded-t-lg;
+}
+
+table :not(thead) tr:nth-child(odd) {
+    @apply bg-neutral-800;
+}
+
+table thead th {
+    @apply border-b border-r border-solid border-neutral-600 text-center px-4 py-2 font-bold;
+} 
+
+table td {
+    @apply p-2 border-r border-b border-solid border-neutral-600;
+}
+
+table thead {
+    @apply font-medium;
+}

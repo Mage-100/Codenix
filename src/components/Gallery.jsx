@@ -6,7 +6,7 @@ import Activity_15_Sept_2 from "../assets/gallery/Activity-15-Sept_2.jpg";
 
 function Gallery() {
     return (
-        <motion.div className="cool_backdrop_background w-full h-ful bg-black-20 p-4 ">
+        <motion.div id="gallery" className="cool_backdrop_background w-full h-ful bg-black-20 p-4 ">
             <motion.h1 className="text-xl flex items-center gap-2">
                 <span className="text-3xl">
                     {/* <BsGrid1X2Fill /> */}

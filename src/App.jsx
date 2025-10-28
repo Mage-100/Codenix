@@ -8,12 +8,13 @@ import "./App.css";
 import UpcomingActivity from "./components/UpcomingActivity.jsx";
 import NewsAnouncements from "./components/NewsAnnouncements.jsx";
 import Gallery from "./components/Gallery.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
     return (
         <>
             <ReactLenis root />
-            <div className="font-montserrat bg-black-10">
+            <div className="font-montserrat bg-black-10 scroll-smooth">
                 <div className="hero-div relative h-screen min-h-screen p-2 xl:p-4 overflow-x-hidden">
                     <div className="cool_backdrop_background w-full h-full bg-black-20 flex flex-col">
                         <Nav />
@@ -30,6 +31,7 @@ function App() {
                 <div className="min-h-screen p-2 xl:p-4 text-white">
                     <Gallery />
                 </div>
+                <Footer />
             </div>
         </>
     );

@@ -1,3 +1,4 @@
+import { useLenis } from "lenis/react";
 import codenix_full_logo_white from "../assets/codenix_full_logo_white.png";
 
 function LI({ children }) {
@@ -24,18 +25,12 @@ function Nav() {
             />
             <nav className="">
                 <ul className="flex justify-end pr-4 pt-2 text-white gap-4">
-                    <a href="/">
-                        <LI>Home</LI>
-                    </a>
-                    <a href="">
-                        <LI>Activity</LI>
-                    </a>
-                    <a href="">
-                        <LI>Achievements</LI>
-                    </a>
-                    <a href="">
-                        <LI>About</LI>
-                    </a>
+                    <LI><a href="/">Home</a></LI>
+                    <LI><a href="/activity">Activity</a></LI>
+                    <LI><a href="/news">News</a></LI>
+                    <LI><a href="/#gallery">Gallery</a></LI>
+                    <LI><a href="/blogs">Blogs</a></LI>
+                    <LI><a href="/about">About</a></LI>
                 </ul>
             </nav>
         </div>
